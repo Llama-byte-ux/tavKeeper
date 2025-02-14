@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Main Screen</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topBox">
+            <button id="btnHome">Home</button>
+            <button id="stockButton">Stock</button>
+            <button id="btnUpgrade">Upgrades</button>
+        </div>
+        <div class="mainBox">
+            <div class="statusBox">
+                <h3>TKMK</h3>
+                <div class="statusPanel">
+                    <div class="statusItems">
+                        <p>Energy: </p>
+                        <p>Money: </p>
+                        <p>Income: </p>
+                        <p>Guests: </p>
+                        <p>Available Rooms: </p>
+                    </div>
+                    <div class="statusItemAmount">
+                        <p id="energy">0</p>
+                        <p id="moneyAmount">0</p>
+                        <p id="incomeAmount">0</p>
+                        <p id="guestAmount">0</p>
+                        <p id="availRooms">0</p>
+                    </div>
+                </div>
+                <div id="turnBar">
+                    <div id="turnBarProgress">
+                    </div>
+                    <button id="turnBtn">Play</button>
+                </div>
+            </div>
+            <div class="mainView">
+                <div class="innerMain" id="screenBox">
+                    <div id="upgradeScreen" class="upgradeScreen"></div>
+                    <div id="stockScreen" class="stockScreen"></div>
+                    <div id="screenHome" class="screenHome">
+                        <p id="tavDesc" class="innerMainParagraph">Welcome to the tavern of Mournkeep. You have recently won a rinky-dink tavern in a game of dice. While not much you have little other prospects to go by. So you pack your bags and make your way to the small town of Mournkeep.</p>
+
+                        <p id="activityDesc" class="innerMainParagraph">You walk past the old wooden gates at the entrance of Mournkeep. The town is small and quite run down with little to offer. However its place along some smaller trade routes does mean it gets occasional travelers from nearby regions. A crafty soul could make a tidy profit here.</p>
+
+                        <p id="custDesc" class="innerMainParagraph">As you make your way towards the south of Mournkeep you see your prize. An old wooden building more hovel than tavern but it was all yours to with what you please. The inside while dirty was still in tact. Some loose stools and tables pushed into the back corner and a dusty bar with a couple stools. Along the west side of the hall is small door leading into the only room for guests. Behind the tavern is a small shed where brewing occurs alongside an empty closet in the back for storage.</p>
+
+                        <p id="workDesc"class="innerMainParagraph">As you make your way back into the small hall and look upon your new home you can only think of one thing.</p>
+
+                        <button id="beginBtn">Well time to clean this mess up.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="../scripts/script.js"></script>
+</body>
+</html>
+

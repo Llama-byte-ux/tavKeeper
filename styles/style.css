@@ -1,0 +1,317 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #fdfefe, #a9dfbf);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topBox {
+    align-items: left;
+    flex: 0.5;
+    background: #1e8449;
+    border: solid;
+    border-color: #1e8449;
+    border-radius: 5px;
+    width: 75vw;
+    height: auto;
+    padding: 5px;
+    margin: 10px;
+}
+
+.topBox button {
+    color: white;
+    background-color: #1e8449;
+    border:solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    visibility: hidden;
+}
+
+.topBox button:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.mainBox {
+    flex: 1;
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    width: 75vw;
+}
+
+.statusItemAmount {
+    font-family: arial;
+    text-align: center;
+    font-size: 35px;
+}
+
+.statusBox {
+    flex: 0.25;
+    width: 25%;
+    height: 75vh;
+    border: solid;
+    border-color: #1e8449;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #1e8449;
+    align-items: center;
+}
+
+.statusBox button {
+    color: black;
+    background-color: #1e8449;
+    border:solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    visibility: hidden;
+    margin-top: 15px;
+}
+
+.statusBox button:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.statusBox h3{
+    font-family: arial;
+    text-align: center;
+    font-size: 35px;
+}
+
+.statusPanel {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3px;
+    align-items: center;
+    margin: 5px;
+}
+
+.statusPanel p{
+    font-family: arial;
+    font-size: 20px;
+    border:solid;
+    border-color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.statusItemAmount p {
+    text-align: center;
+}
+
+.mainView {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    border: solid;
+    border-color: #1e8449;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e8449;
+    border-width: 7px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.innerMain {
+    background-color: black;
+    width: 98%;
+    height: 98%;
+    border: solid;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 7px;
+}
+
+.screenHome button {
+    color: black;
+    background-color: #1e8449;
+    border:solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.screenHome button:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.innerMain p {
+    color: white;
+    text-align: left;
+    margin: 15px;
+}
+
+.upgradeScreen {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.upgradeScreenSidePanel {
+    flex: 0.25;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.upgradeScreenMainPanel {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.upgradeScreenMainPanel div {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-objects: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: green;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    width: 98%
+}
+.upgradeScreenMainPanel button {
+    flex: 1;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.upgradeScreenBtn {
+    border: solid;
+    border-radius: 10px;
+    color: black;
+    background-color: #1e8449;
+    border-color: white;
+}
+
+.upgradeScreenBtnActive {
+    border: solid;
+    border-radius: 10px;
+    color: black;
+    background-color: #1e8449;
+    border-color: gold;
+}
+
+.upgradeScreenBtnDep {
+    border: solid;
+    border-radius: 10px;
+    color: white;
+    background-color: gray;
+    border-color: lightgray;
+}
+
+.stockScreen {
+    display: none;
+    flex-direction: row;
+    color: white;
+    margin: auto;
+    height: 100%;
+
+}
+
+.stockScreen div{
+    align-items: center;
+    border-width: 1px;
+ }
+
+ .stockScreenMain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: green;
+    width: 65%;
+}
+
+.stockScreenMain div{
+    flex: 1;
+    border: solid;
+    border-color: green;
+    border-width: 1px 0px 1px 0px;
+    width: 100%;
+}
+
+.stockScreenSidePanel {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: green;
+    width: 35%;
+}
+
+.stockScreenSidePanel div{
+    flex: 1;
+    border: solid;
+    border-color: green;
+    border-width: 1px 0px 1px 0px;
+    width: 100%;
+}
+
+
+#turnBar {
+    width: 90%;
+    background-color: #f0f0f0;
+    height: 30px;
+    margin-bottom: 10px;
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+    margin: auto;
+    visibility: hidden;
+
+}
+
+#turnBarProgress {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+/*Keyframes*/
+
+@keyframes textFade {
+    from {opacity: 0}
+    to {opacity 1}
+}
+
+
